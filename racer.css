@@ -3,16 +3,22 @@ h1{
 }
 
 #track-one{
+  text-align: right;
   margin-bottom: 100px;
 	width: 1%; 
-	min-height: 50px; 
-	background-color: blue; 
+	min-height: 100px; 
 	display: block
 }
+
 #track-two{
+  text-align: right;
 	margin-bottom: 100px;
 	width: 1%; 
-	min-height: 50px; 
-	background-color: red; 
+	min-height: 100px; 
 	display: block
+}
+
+.snail{
+  height: 100px;
+  position: absolute;
 }

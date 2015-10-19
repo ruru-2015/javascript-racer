@@ -28,3 +28,6 @@ $(window).keydown(function(e){
     }
   }
 })
+
+while(currentWidth<targetWidth)
+  currentWidth++
