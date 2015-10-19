@@ -3,3 +3,13 @@ table td {
   width: 50px;
   height: 30px;
 }
+
+
+.player1 .current {
+	background-color: black;
+}
+
+.player2 .current {
+	background-color: blue;
+}
+
