@@ -1,6 +1,11 @@
 var i = 1
 var j = 1
+var audioElement = document.createElement('audio');
+audioElement.setAttribute('src', 'cat.mp3')
 $(document).keypress(function(e) {
+  audioElement.pause();
+  audioElement.currentTime = 0;
+  audioElement.play();
 
   if(e.which == 113) {
     $('.player1 .' + i).css('background-color', 'green');
