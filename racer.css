@@ -1,12 +1,16 @@
+h1{
+  margin-bottom: 100px;
+}
+
 #track-one{
-	margin-top: 100px;
+  margin-bottom: 100px;
 	width: 1%; 
 	min-height: 50px; 
 	background-color: blue; 
 	display: block
 }
 #track-two{
-	margin-top: 100px;
+	margin-bottom: 100px;
 	width: 1%; 
 	min-height: 50px; 
 	background-color: red; 
