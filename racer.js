@@ -1,26 +1,26 @@
-function addKlass(klass){
-  $('.'+ klass).next().addClass(klass)
-}
-
-function removeKlass(klass){
-  $('.'+ klass).prev().removeClass(klass)
+function movePlayer(num) {
+  cell = $('.player' + num + ' .active')
+  cell.removeClass('active')
+  cell.next().addClass('active')
+  if ($('.player' + num + ' td:last').hasClass('active')) {
+    if (!alert('Player ' +num+' winna winna!')) {
+      window.location.reload();
+    }
+  }
 }
 
 $(document).keypress(function(e) {
-  if(e.which == 113 && $('.player1 td:nth-last-child(2)').hasClass('p1')) {
-    addKlass('p1') & removeKlass('p1')
-    if(!alert('Player 1 winna winna!')){window.location.reload();}
-  }else if (e.which == 113) {
-    addKlass('p1') & removeKlass('p1')
-  }
+ console.log(e)
+})
+$(document).keydown(function(e) {
+ console.log(e)
 })
 
-
-$(document).keypress(function(e) {
-  if(e.which == 112 && $('.player2 td:nth-last-child(2)').hasClass('p2')) {
-    addKlass('p2') & removeKlass('p2')
-    if(!alert('Player 2 winna winna!')){window.location.reload();}
-  }else if (e.which == 112) {
-    addKlass('p2') & removeKlass('p2')
+$(document).keyup(function(e) {
+  console.log(e)
+  if(e.which == 113) { 
+    movePlayer(1)
+  } else if(e.which == 112) { 
+    movePlayer(2)
   }
 })
