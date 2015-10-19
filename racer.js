@@ -11,8 +11,7 @@ $(document).keypress(function(e) {
     addKlass('p1') & removeKlass('p1')
     if(!alert('Player 1 winna winna!')){window.location.reload();}
   }else if (e.which == 113) {
-    addKlass('p1')
-    removeKlass('p1')
+    addKlass('p1') & removeKlass('p1')
   }
 })
 
@@ -22,7 +21,6 @@ $(document).keypress(function(e) {
     addKlass('p2') & removeKlass('p2')
     if(!alert('Player 2 winna winna!')){window.location.reload();}
   }else if (e.which == 112) {
-    addKlass('p2')
-    removeKlass('p2')
+    addKlass('p2') & removeKlass('p2')
   }
 })
