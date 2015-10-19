@@ -1,5 +1,23 @@
+.main {
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+
+}
+
 table td {
+  width: 100%;
+  text-align: center;
   border: 1px solid black;
   width: 50px;
   height: 30px;
+}
+.borris {
+  text-align: center;
+}
+
+.gameEnd {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 3px;
 }

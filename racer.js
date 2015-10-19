@@ -27,5 +27,7 @@ $(document).keypress(function(e) {
 });
 
 function endgame() {
-  window.location = "http://i.ytimg.com/vi/vJaAy3jmEx8/maxresdefault.jpg"
+
+  $('.gameEnd').attr('src', "http://i.ytimg.com/vi/vJaAy3jmEx8/maxresdefault.jpg");
+
 }
