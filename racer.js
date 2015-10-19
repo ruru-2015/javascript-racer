@@ -7,15 +7,20 @@ $(document).keypress(function(e) {
     i++;
 
     if (i == 12 && j < 12) {
-      alert("Player One has won! Feel incredible shame, Player Two.")
+      alert("Player One has won! Feel incredible shame, Player Two.");
+      endgame();
       }
   } else if (e.which == 112){
     $('.player2 .' + j).css('background-color', 'blue');
     j++;
 
     if (j == 12 && i < 12) {
-      alert("Player Two has won! Player One must commit Seppuku.")
+      alert("Player Two has won! Player One must commit Seppuku.");
+      endgame();
     }
   }
 });
 
+function endgame() {
+  window.location = "http://i.ytimg.com/vi/vJaAy3jmEx8/maxresdefault.jpg"
+}
